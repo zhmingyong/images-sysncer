@@ -35,3 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/apache/dolphinscheduler-standalone-server:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/apache/dolphinscheduler-standalone-server:3.1.9
+        skopeo copy docker://docker.io/apache/hadoop:3.3.6 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/apache/hadoop:3.3.6

@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/gitea/gitea:1.22.0 docker://registry.cn-hangzhou.aliyuncs.com/docker_image-ljx/gitea:1.22.0
+        skopeo copy docker://docker.io/apache/dolphinscheduler-standalone-server:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/apache/dolphinscheduler-standalone-server:3.1.9

@@ -34,5 +34,10 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/apache/dolphinscheduler-standalone-server:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-standalone-server:3.1.9
-        skopeo copy docker://docker.io/apache/hadoop:3.3.6 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/hadoop:3.3.6
+        # skopeo copy docker://docker.io/apache/dolphinscheduler-standalone-server:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-standalone-server:3.1.9
+        # skopeo copy docker://docker.io/apache/hadoop:3.3.6 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/hadoop:3.3.6
+        skopeo copy docker://docker.io/apache/dolphinscheduler-api:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-api:3.1.9
+        skopeo copy docker://docker.io/apache/dolphinscheduler-master:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-master:3.1.9
+        skopeo copy docker://docker.io/apache/dolphinscheduler-worker:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-worker:3.1.9
+        skopeo copy docker://docker.io/apache/dolphinscheduler-tools:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-tools:3.1.9
+        skopeo copy docker://docker.io/apache/dolphinscheduler-alert-server:3.1.9 docker://registry.cn-chengdu.aliyuncs.com/hortonworks/dolphinscheduler-alert-server:3.1.9
